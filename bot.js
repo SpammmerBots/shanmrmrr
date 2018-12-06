@@ -3,7 +3,7 @@ const Mahmoud = new Discord.Client();
 
 console.log("BOT ONLINE");
  
-Mahmoud.on("guildMemberAdd", member => {
+client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
   return channel.send(` 
 **
@@ -16,4 +16,4 @@ Mahmoud.on("guildMemberAdd", member => {
 **`) 
 }).catch(console.error)
 })
-Mahmoud.login('process.env.BOT_TOKEN');
+client.login('process.env.BOT_TOKEN');
