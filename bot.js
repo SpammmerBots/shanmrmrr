@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const Mahmoud = new Discord.Client();
+const client = new Discord.Client();
 
 console.log("BOT ONLINE");
  
